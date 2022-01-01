@@ -19,9 +19,7 @@
 #include <string>
 #include <sys/time.h>
 #if defined(ESP8266)
-  #include <pgmspace.h>
   #include <ESP8266wifi.h>
-  #include <WiFiUdp.h>
 #elif  defined(ESP32)
   #include <wifi.h>
   #include <freertos/task.h>
@@ -72,7 +70,7 @@ private:
     {  (char*) "GMT", (char*)"Greenwich Mean Time",                       0, (char*)"GMT 0:00"   },
     {  (char*) "UTC", (char*)"Universal Coordinated Time",                0, (char*)"GMT 0:00"   },
     {  (char*) "CET", (char*)"Central European Time",                    60, (char*)"GMT +1:00"  },
-    {  (char*) "EET", (char*)"Eastern European Time",                   120, (char*)"GMT+2:00"   },
+    {  (char*) "EET", (char*)"Eastern European Time",                   120, (char*)"GMT +2:00"  },
     {  (char*) "ART", (char*)"(Arabic) Egypt Standard Time",            120, (char*)"GMT +2:00"  },
     {  (char*) "EAT", (char*)"Eastern African Time",                    180, (char*)"GMT +3:00"  },
     {  (char*) "MET", (char*)"Middle East Time",                        210, (char*)"GMT +3:30"  },
