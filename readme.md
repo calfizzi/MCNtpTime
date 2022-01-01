@@ -4,11 +4,14 @@ This Library works on ESP8266 and ESP32 to manage Ntp Time from internet grantin
 
 
 ## Methods:
-```
   ## ESP8266
+```
     void                      begin                   ( const char *zoneCode=(char*)"GMT", uint32_t updateIntervalTimeSeconds =  3600);
+```
   ## ESP32
+```
     void                      begin                   ( const char *zoneCode="GMT", bool useTask=true, uint32_t updateIntervalTimeSeconds =  3600);
+```
 
   void                        update                  ( bool forceNtpUpdate = false, uint32_t retryOnFailMillis = 1000);
   struct tm                   getTime                 ( void );
