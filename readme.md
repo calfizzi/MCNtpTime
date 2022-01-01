@@ -1,7 +1,8 @@
 # MCNtpTime
-This Library works on ESP8266 and ESP32 to manage Ntp Time from internet granting regular time update.
-      Between an update and the next one (e.i. each 60 minutes) it still works with internal Clock so in any case you can get the updated time.
-      You can regulate the update interval by begin function.
+**Get ESP Time from Internet to have an updated clock on your ESP!**
+
+This Library works on ESP8266 and ESP32 to manage Ntp Time from internet granting regular time update.Between an update and the next one (e.i. each 60 minutes) it still works with internal Clock so in any case you can get the updated time.
+You can regulate the update interval by begin function.
 
 
 ## Methods:
